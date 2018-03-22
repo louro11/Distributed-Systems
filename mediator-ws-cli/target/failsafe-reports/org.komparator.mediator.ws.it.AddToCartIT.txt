@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: org.komparator.mediator.ws.it.AddToCartIT
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 2, Errors: 3, Skipped: 0, Time elapsed: 56.63 sec <<< FAILURE! - in org.komparator.mediator.ws.it.AddToCartIT
+testExceedingQuantity2(org.komparator.mediator.ws.it.AddToCartIT)  Time elapsed: 3.768 sec  <<< FAILURE!
+java.lang.AssertionError: Expected exception: org.komparator.mediator.ws.NotEnoughItems_Exception
+
+testSingleItemAddedTwoTimes(org.komparator.mediator.ws.it.AddToCartIT)  Time elapsed: 3.324 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<2>
+	at org.komparator.mediator.ws.it.AddToCartIT.testSingleItemAddedTwoTimes(AddToCartIT.java:269)
+
+testInexistingItem(org.komparator.mediator.ws.it.AddToCartIT)  Time elapsed: 3.33 sec  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<org.komparator.mediator.ws.InvalidItemId_Exception> but was<com.sun.xml.ws.fault.ServerSOAPFaultException>
+	at org.komparator.mediator.ws.it.AddToCartIT.testInexistingItem(AddToCartIT.java:186)
+
+testEmptySupplierId(org.komparator.mediator.ws.it.AddToCartIT)  Time elapsed: 2.227 sec  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<org.komparator.mediator.ws.InvalidItemId_Exception> but was<com.sun.xml.ws.fault.ServerSOAPFaultException>
+	at org.komparator.mediator.ws.it.AddToCartIT.testEmptySupplierId(AddToCartIT.java:177)
+
+testNullSupplierId(org.komparator.mediator.ws.it.AddToCartIT)  Time elapsed: 2.017 sec  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<org.komparator.mediator.ws.InvalidItemId_Exception> but was<com.sun.xml.ws.fault.ServerSOAPFaultException>
+	at org.komparator.mediator.ws.it.AddToCartIT.testNullSupplierId(AddToCartIT.java:168)
+

@@ -1,0 +1,5 @@
+org/komparator/supplier/ws/it/BuyProductIT.class
+org/komparator/supplier/ws/it/GetProductIT.class
+org/komparator/supplier/ws/it/SearchProductsIT.class
+org/komparator/supplier/ws/it/PingIT.class
+org/komparator/supplier/ws/it/BaseIT.class

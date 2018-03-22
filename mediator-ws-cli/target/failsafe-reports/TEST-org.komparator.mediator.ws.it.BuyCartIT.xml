@@ -1,0 +1,1460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.komparator.mediator.ws.it.BuyCartIT" time="26.667" tests="9" errors="6" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="user.country.format" value="PT"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/louro/Desktop/SD/A67-Komparator/mediator-ws-cli"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/louro/Desktop/SD/A67-Komparator/mediator-ws-cli"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.8.0-46-generic"/>
+    <property name="user.home" value="/home/louro"/>
+    <property name="user.timezone" value="Europe/Lisbon"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="louro"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher verify"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="user.language.format" value="pt"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testInvalidCard" classname="org.komparator.mediator.ws.it.BuyCartIT" time="2.892">
+    <error message="Unexpected exception, expected&lt;org.komparator.mediator.ws.InvalidCreditCard_Exception&gt; but was&lt;com.sun.xml.ws.fault.ServerSOAPFaultException&gt;" type="java.lang.Exception"><![CDATA[java.lang.Exception: Unexpected exception, expected<org.komparator.mediator.ws.InvalidCreditCard_Exception> but was<com.sun.xml.ws.fault.ServerSOAPFaultException>
+	at org.komparator.mediator.ws.it.BuyCartIT.testInvalidCard(BuyCartIT.java:165)
+]]></error>
+    <system-out><![CDATA[[2017-05-05T00:58:07.614] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:07.615</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:07.615] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:07.615</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:08.131] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:08.088</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:08.088</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:08.134] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:08.088</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+Loaded test properties:
+{ws.name=A67_Mediator, uddi.enabled=true, uddi.url=http://a67:ti7LCU5H@uddi.sd.rnl.tecnico.ulisboa.pt:9090, ws.url=${ws.url}}
+[2017-05-05T00:58:08.658] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:08.660</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:08.661] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:08.660</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.199] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.198</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.198</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:09.201] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.198</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.792] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.793</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.793] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.793</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.830] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.828</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.828</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.833] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.828</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.834] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.835</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.836] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.835</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.844] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.842</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.842</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.845] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.842</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.846] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.848</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.848] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.848</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.895] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.853</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.853</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.897] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.853</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.898] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.899</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.899] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.899</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.906] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.904</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.904</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.909] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.904</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.910] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.911</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.911] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.911</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.963] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.917</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.917</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.964] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.917</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.965] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.966</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:09.967] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.966</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:10.015] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.971</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.971</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:10.017] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:09.971</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:10.017] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>1</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:10.019</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>1</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:10.019] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:10.019</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>1</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:10.338] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:10.336</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:10.336</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:10.340] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:10.336</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:10.341] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr>123456789012345227282828022802</creditCardNr></ns2:buyCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+Ignoring IOException in handler: java.io.FileNotFoundException: src/main/resources/cer (No such file or directory)
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:10.419</d:timestamp></SOAP-ENV:Header><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr>123456789012345227282828022802</creditCardNr></ns2:buyCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:10.420] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:10.419</d:timestamp></SOAP-ENV:Header><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr>123456789012345227282828022802</creditCardNr></ns2:buyCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:11.006] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><S:Fault xmlns:ns3="http://www.w3.org/2003/05/soap-envelope"><faultcode>S:Server</faultcode><faultstring>java.lang.RuntimeException</faultstring></S:Fault></S:Body></S:Envelope>
+
+[2017-05-05T00:58:11.007] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:11.008</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:11.009] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:11.008</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:11.543] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:11.499</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:11.499</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:11.545] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:11.499</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+]]></system-out>
+  </testcase>
+  <testcase name="testNullCart" classname="org.komparator.mediator.ws.it.BuyCartIT" time="2.014"/>
+  <testcase name="testIncompleteCard" classname="org.komparator.mediator.ws.it.BuyCartIT" time="2.728">
+    <error message="Unexpected exception, expected&lt;org.komparator.mediator.ws.InvalidCreditCard_Exception&gt; but was&lt;com.sun.xml.ws.fault.ServerSOAPFaultException&gt;" type="java.lang.Exception"><![CDATA[java.lang.Exception: Unexpected exception, expected<org.komparator.mediator.ws.InvalidCreditCard_Exception> but was<com.sun.xml.ws.fault.ServerSOAPFaultException>
+	at org.komparator.mediator.ws.it.BuyCartIT.testIncompleteCard(BuyCartIT.java:154)
+]]></error>
+    <system-out><![CDATA[[2017-05-05T00:58:13.562] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:13.562</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:13.563] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:13.562</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.135] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.090</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.090</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:14.138] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.090</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.813] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.814</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.814] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.814</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.820] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.819</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.819</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.822] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.819</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.822] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.823</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.823] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.823</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.833] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.831</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.831</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.834] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.831</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.835] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.836</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.837] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.836</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.887] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.842</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.842</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.891] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.842</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.891] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.892</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.893] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.892</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.909] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.902</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.902</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.910] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.902</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.910] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.911</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.912] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.911</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.959] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.916</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.916</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.960] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.916</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.961] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.961</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:14.962] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.961</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:15.011] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.966</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.966</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:15.013] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:14.966</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:15.013] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>1</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:15.014</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>1</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:15.015] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:15.014</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>1</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:15.305] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:15.304</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:15.304</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:15.307] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:15.304</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:15.308] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr>8392320</creditCardNr></ns2:buyCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+Ignoring IOException in handler: java.io.FileNotFoundException: src/main/resources/cer (No such file or directory)
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:15.309</d:timestamp></SOAP-ENV:Header><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr>8392320</creditCardNr></ns2:buyCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:15.309] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:15.309</d:timestamp></SOAP-ENV:Header><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr>8392320</creditCardNr></ns2:buyCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:15.699] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><S:Fault xmlns:ns3="http://www.w3.org/2003/05/soap-envelope"><faultcode>S:Server</faultcode><faultstring>java.lang.RuntimeException</faultstring></S:Fault></S:Body></S:Envelope>
+
+[2017-05-05T00:58:15.701] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:15.702</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:15.702] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:15.702</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:16.287] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:16.245</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:16.245</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:16.289] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:16.245</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+]]></system-out>
+  </testcase>
+  <testcase name="testFullBuy" classname="org.komparator.mediator.ws.it.BuyCartIT" time="4.075">
+    <error message="Client received SOAP Fault from server: java.lang.RuntimeException Please see the server log to find more detail regarding exact cause of the failure." type="com.sun.xml.ws.fault.ServerSOAPFaultException">com.sun.xml.ws.fault.ServerSOAPFaultException: Client received SOAP Fault from server: java.lang.RuntimeException Please see the server log to find more detail regarding exact cause of the failure.
+	at org.komparator.mediator.ws.it.BuyCartIT.testFullBuy(BuyCartIT.java:226)
+</error>
+    <system-out><![CDATA[[2017-05-05T00:58:16.291] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:16.292</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:16.292] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:16.292</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:16.851] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:16.808</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:16.808</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:16.852] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:16.808</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.569] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.571</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.571] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.571</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.578] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.576</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.576</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.580] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.576</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.581] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.583</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.583] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.583</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.592] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.590</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.590</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.594] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.590</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.595] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.596</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.597] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.596</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.647] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.604</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.604</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.648] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.604</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.649] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.650</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.651] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.650</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.658] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.656</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.656</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.659] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.656</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.660] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.661</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.662] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.661</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.707] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.665</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.665</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.709] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.665</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.709] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.710</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.711] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.710</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.759] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.716</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.716</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.761] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.716</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.762] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>2</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.763</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>2</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:17.763] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:17.763</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>2</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:18.236] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:18.229</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:18.229</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:18.237] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:18.229</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:18.238] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier2</supplierId></itemId><itemQty>1</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:18.239</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier2</supplierId></itemId><itemQty>1</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:18.240] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:18.239</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier2</supplierId></itemId><itemQty>1</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:18.599] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:18.554</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:18.554</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:18.602] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:18.554</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:18.603] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>3</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:18.605</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>3</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:18.606] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:18.605</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>3</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:19.003] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:18.959</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:18.959</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:19.004] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:18.959</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:19.005] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>DoNotBuyMe</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier2</supplierId></itemId><itemQty>1</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:19.006</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>DoNotBuyMe</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier2</supplierId></itemId><itemQty>1</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:19.006] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:19.006</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>DoNotBuyMe</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier2</supplierId></itemId><itemQty>1</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:19.367] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:19.324</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:19.324</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:19.370] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:19.324</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:19.371] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr>1234567890123452</creditCardNr></ns2:buyCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+Ignoring IOException in handler: java.io.FileNotFoundException: src/main/resources/cer (No such file or directory)
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:19.372</d:timestamp></SOAP-ENV:Header><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr>1234567890123452</creditCardNr></ns2:buyCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:19.373] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:19.372</d:timestamp></SOAP-ENV:Header><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr>1234567890123452</creditCardNr></ns2:buyCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:19.723] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><S:Fault xmlns:ns3="http://www.w3.org/2003/05/soap-envelope"><faultcode>S:Server</faultcode><faultstring>java.lang.RuntimeException</faultstring></S:Fault></S:Body></S:Envelope>
+
+[2017-05-05T00:58:19.726] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:19.727</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:19.728] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:19.727</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:20.367] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:20.322</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:20.322</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:20.369] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:20.322</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+]]></system-out>
+  </testcase>
+  <testcase name="testPartialBuy" classname="org.komparator.mediator.ws.it.BuyCartIT" time="3.726">
+    <error message="Client received SOAP Fault from server: java.lang.RuntimeException Please see the server log to find more detail regarding exact cause of the failure." type="com.sun.xml.ws.fault.ServerSOAPFaultException">com.sun.xml.ws.fault.ServerSOAPFaultException: Client received SOAP Fault from server: java.lang.RuntimeException Please see the server log to find more detail regarding exact cause of the failure.
+	at org.komparator.mediator.ws.it.BuyCartIT.testPartialBuy(BuyCartIT.java:257)
+</error>
+    <system-out><![CDATA[[2017-05-05T00:58:20.370] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:20.371</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:20.371] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:20.371</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:20.899] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:20.855</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:20.855</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:20.902] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:20.855</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.580] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.581</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.582] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.581</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.589] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.587</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.587</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.591] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.587</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.592] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.594</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.595] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.594</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.604] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.601</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.601</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.605] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.601</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.606] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.607</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.607] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.607</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.655] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.612</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.612</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.657] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.612</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.657] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.658</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.658] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.658</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.666] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.664</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.664</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.667] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.664</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.668] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.669</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.669] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.669</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.719] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.674</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.674</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.722] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.674</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.723] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.725</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.726] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.725</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.796] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.749</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.749</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.798] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.749</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.800] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>4</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.801</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>4</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:21.802] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:21.801</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>4</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:22.130] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:22.128</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:22.128</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:22.131] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:22.128</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:22.131] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>otherXyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>3</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:22.132</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>otherXyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>3</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:22.133] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:22.132</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>otherXyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>3</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:22.463] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:22.419</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:22.419</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:22.464] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:22.419</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:22.465] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>15</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:22.466</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>15</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:22.466] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:22.466</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>15</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:22.795] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:22.751</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:22.751</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:22.798] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:22.751</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:22.799] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>otherXyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>7</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:22.799</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>otherXyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>7</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:22.800] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:22.799</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>otherXyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>7</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:23.187] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:23.142</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:23.142</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:23.189] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:23.142</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:23.189] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr>1234567890123452</creditCardNr></ns2:buyCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+Ignoring IOException in handler: java.io.FileNotFoundException: src/main/resources/cer (No such file or directory)
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:23.190</d:timestamp></SOAP-ENV:Header><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr>1234567890123452</creditCardNr></ns2:buyCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:23.191] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:23.190</d:timestamp></SOAP-ENV:Header><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr>1234567890123452</creditCardNr></ns2:buyCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:23.579] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><S:Fault xmlns:ns3="http://www.w3.org/2003/05/soap-envelope"><faultcode>S:Server</faultcode><faultstring>java.lang.RuntimeException</faultstring></S:Fault></S:Body></S:Envelope>
+
+[2017-05-05T00:58:23.581] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:23.582</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:23.582] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:23.582</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:24.091] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:24.049</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:24.049</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:24.094] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:24.049</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+]]></system-out>
+  </testcase>
+  <testcase name="testInexistingCart" classname="org.komparator.mediator.ws.it.BuyCartIT" time="1.891"/>
+  <testcase name="testEmptyCardId" classname="org.komparator.mediator.ws.it.BuyCartIT" time="2.891">
+    <error message="Unexpected exception, expected&lt;org.komparator.mediator.ws.InvalidCreditCard_Exception&gt; but was&lt;com.sun.xml.ws.fault.ServerSOAPFaultException&gt;" type="java.lang.Exception"><![CDATA[java.lang.Exception: Unexpected exception, expected<org.komparator.mediator.ws.InvalidCreditCard_Exception> but was<com.sun.xml.ws.fault.ServerSOAPFaultException>
+	at org.komparator.mediator.ws.it.BuyCartIT.testEmptyCardId(BuyCartIT.java:143)
+]]></error>
+    <system-out><![CDATA[[2017-05-05T00:58:25.987] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:25.988</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:25.989] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:25.988</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:26.539] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:26.493</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:26.493</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:26.540] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:26.493</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.202] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.203</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.204] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.203</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.210] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.208</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.208</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.213] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.208</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.214] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.215</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.216] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.215</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.225] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.222</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.222</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.227] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.222</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.228] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.229</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.229] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.229</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.279] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.234</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.234</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.281] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.234</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.282] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.282</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.283] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.282</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.290] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.288</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.288</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.291] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.288</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.292] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.293</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.293] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.293</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.343] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.298</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.298</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.344] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.298</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.345] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.346</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.346] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.346</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.395] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.351</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.351</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.396] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.351</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.397] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>1</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.398</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>1</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.398] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.398</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>1</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.827] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.825</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.825</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:27.829] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.825</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.829] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr/></ns2:buyCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+Ignoring IOException in handler: java.io.FileNotFoundException: src/main/resources/cer (No such file or directory)
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.830</d:timestamp></SOAP-ENV:Header><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr/></ns2:buyCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:27.831] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:27.830</d:timestamp></SOAP-ENV:Header><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr/></ns2:buyCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:28.191] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><S:Fault xmlns:ns3="http://www.w3.org/2003/05/soap-envelope"><faultcode>S:Server</faultcode><faultstring>java.lang.RuntimeException</faultstring></S:Fault></S:Body></S:Envelope>
+
+[2017-05-05T00:58:28.193] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:28.194</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:28.194] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:28.194</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:28.875] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:28.831</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:28.831</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:28.877] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:28.831</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+]]></system-out>
+  </testcase>
+  <testcase name="testEmptyCartId" classname="org.komparator.mediator.ws.it.BuyCartIT" time="2.108"/>
+  <testcase name="testEmptyBuy" classname="org.komparator.mediator.ws.it.BuyCartIT" time="3.819">
+    <error message="Client received SOAP Fault from server: java.lang.RuntimeException Please see the server log to find more detail regarding exact cause of the failure." type="com.sun.xml.ws.fault.ServerSOAPFaultException">com.sun.xml.ws.fault.ServerSOAPFaultException: Client received SOAP Fault from server: java.lang.RuntimeException Please see the server log to find more detail regarding exact cause of the failure.
+	at org.komparator.mediator.ws.it.BuyCartIT.testEmptyBuy(BuyCartIT.java:296)
+</error>
+    <system-out><![CDATA[[2017-05-05T00:58:30.986] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:30.988</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:30.988] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:30.988</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:31.531] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:31.486</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:31.486</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:31.533] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:31.486</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.162] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.163</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.164] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.163</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>AAA bateries (pack of 3)</desc><quantity>10</quantity><price>3</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.171] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.170</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.170</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.173] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.170</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.174] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.177</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.177] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.177</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p1</id><desc>3batteries</desc><quantity>10</quantity><price>4</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.187] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.183</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.183</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.188] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.183</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.189] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.190</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.190] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.190</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>AAA bateries (pack of 10)</desc><quantity>20</quantity><price>9</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.239] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.195</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.195</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.241] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.195</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.242] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.243</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.244] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.243</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p2</id><desc>10x AAA battery</desc><quantity>20</quantity><price>8</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.251] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.249</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.249</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.253] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.249</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.254] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.255</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.256] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.255</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p3</id><desc>Digital Multimeter</desc><quantity>5</quantity><price>15</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.303] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.260</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.260</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.305] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.260</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.305] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.306</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.307] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.306</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProduct xmlns:ns2="http://ws.supplier.komparator.org/"><productToCreate><id>p4</id><desc>very cheap batteries</desc><quantity>5</quantity><price>2</price></productToCreate></ns2:createProduct></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.355] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.312</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.312</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.357] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.312</d:timestamp></SOAP-ENV:Header><S:Body><ns2:createProductResponse xmlns:ns2="http://ws.supplier.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.358] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>10</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.359</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>10</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.359] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.359</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>10</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.659] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.658</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.658</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:32.661] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.658</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.661] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>otherXyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>10</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.662</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>otherXyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>10</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:32.663] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:32.662</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>otherXyz</cartId><itemId><productId>p1</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>10</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:33.103] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:33.062</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:33.062</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:33.105] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:33.062</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:33.105] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>15</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:33.106</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>15</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:33.107] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:33.106</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>15</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:33.495] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:33.453</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:33.453</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:33.497] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:33.453</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:33.498] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>otherXyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>15</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:33.499</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>otherXyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>15</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:33.500] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:33.499</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>otherXyz</cartId><itemId><productId>p2</productId><supplierId>A67_Supplier1</supplierId></itemId><itemQty>15</itemQty></ns2:addToCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:33.860] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:33.816</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:33.816</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:33.862] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:33.816</d:timestamp></SOAP-ENV:Header><S:Body><ns2:addToCartResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:33.863] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr>1234567890123452</creditCardNr></ns2:buyCart></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+Ignoring IOException in handler: java.io.FileNotFoundException: src/main/resources/cer (No such file or directory)
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:33.865</d:timestamp></SOAP-ENV:Header><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr>1234567890123452</creditCardNr></ns2:buyCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:33.866] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:33.865</d:timestamp></SOAP-ENV:Header><S:Body><ns2:buyCart xmlns:ns2="http://ws.mediator.komparator.org/"><cartId>xyz</cartId><creditCardNr>1234567890123452</creditCardNr></ns2:buyCart></S:Body></S:Envelope>
+
+[2017-05-05T00:58:34.247] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><S:Fault xmlns:ns3="http://www.w3.org/2003/05/soap-envelope"><faultcode>S:Server</faultcode><faultstring>java.lang.RuntimeException</faultstring></S:Fault></S:Body></S:Envelope>
+
+[2017-05-05T00:58:34.250] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted OUTbound SOAP message.
+TIMER HANDLER --- intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:34.251</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:34.252] intercepted OUTbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:34.251</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clear xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+[2017-05-05T00:58:34.803] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:34.758</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+TIMER HANDLER --- intercepted INbound SOAP message:
+SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:34.758</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+CIPHER HANDLER --- intercepted INbound SOAP message.
+[2017-05-05T00:58:34.804] intercepted  INbound SOAP message:
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><d:timestamp xmlns:d="http://demo">2017-05-05T00:58:34.758</d:timestamp></SOAP-ENV:Header><S:Body><ns2:clearResponse xmlns:ns2="http://ws.mediator.komparator.org/"/></S:Body></S:Envelope>
+
+]]></system-out>
+  </testcase>
+</testsuite>

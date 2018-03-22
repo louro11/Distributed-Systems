@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.komparator.mediator.ws.it.GetItemsIT
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.439 sec - in org.komparator.mediator.ws.it.GetItemsIT
