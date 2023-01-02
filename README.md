@@ -3,11 +3,11 @@
 Grupo A67
 
 
-Gonçalo Louro 78982 goncalo_louro@hotmail.com
+Gonçalo Louro  
 
-Sara Azinhal 81700 sazinhal@hotmail.com
+Sara Azinhal 
 
-Patrícia Simões-Lopes 79601 patricia-simoes-lopes@hotmail.com
+Patrícia Simões-Lopes
 
 
 
